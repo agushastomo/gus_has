@@ -1,0 +1,82 @@
+<div class="card">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Saya</title>
+</head>
+<body>
+
+<style>
+body {
+    background: #f0f8ff;
+    font-family: Arial;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+</style>
+
+<style>
+ul {
+    text-align: left;
+    display: inline-block;
+}
+</style>
+
+
+<h1>Nama Gus Has</h1>
+<h2>Profil saya</h2>
+<p>Saya suka sekali belajar hal baru</p>
+<p>Saya sedang belajar website sederhana</p>
+
+<img src="gus has.png" width="150" style="border-radius:50%;">
+
+<h3>Hobi  saya:</h3>
+<ul>
+<li>Belajar Apapun</li>
+<li>Mendengar Kajian Islam</li>
+<li>Mengaji</li>
+<li>Fotografi Ai</li>
+</ul>
+
+
+<h3>Hubungi Saya</h3>
+
+<form>
+  <p>Nama:</p>
+ <input type="text" id="nama" placeholder="Masukkan nama">
+
+  <p>Email:</p>
+  <input type="email" placeholder="Masukkan email">
+
+  <br>
+  <button type="button" onclick="kirimData()">Kirim</button>
+</form>
+
+<script>
+function kirimData() {
+    var nama = document.getElementById("nama").value;
+
+    if(nama == "") {
+        alert("Nama harus diisi!");
+    } else {
+        alert("Terima kasih " + nama + "!");
+    }
+}
+</script>
+
+
+</html>
+
+</div>
+
+
+
+</body>
